@@ -8,7 +8,7 @@ runs:
   steps:
     - shell: bash
       run: |
-        if [[ "${GITHUB_HEAD_REF}" != ''; then
+        if [ "${GITHUB_HEAD_REF}" != '' ]; then
           echo "BRANCH_NAME=${GITHUB_HEAD_REF}" >> $GITHUB_ENV;
           echo "PR detected: branch name ${GITHUB_HEAD_REF}";
         else
