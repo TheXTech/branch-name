@@ -12,7 +12,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v1
-    - run: npm ci
     - uses: TheXTech/branch-name@v0.1
     # Use branch name for whatever purpose
     - run: echo ${BRANCH_NAME}
