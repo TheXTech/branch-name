@@ -13,7 +13,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - run: npm ci
-    - uses: TheXTech/branch-name@v1.0.0
+    - uses: TheXTech/branch-name@v0.1
     # Use branch name for whatever purpose
     - run: echo ${BRANCH_NAME}
 ```
